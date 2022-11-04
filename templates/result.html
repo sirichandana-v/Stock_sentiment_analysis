@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>profit prediction</title>
+        <style>
+       body
+{
+margin:0;
+}
+#myVideo {
+    position: fixed;
+    margin-top: 60px;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+z-index: -1;
+  }
+  /*.content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(201, 47, 47, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+    background: transparent;
+    margin-left: 500px;
+    margin-top: 20px;
+    margin-bottom: 200px;
+  }*/
+  textarea
+  {
+    align-self:baseline;
+  }
+  .navbar
+  {
+    background: rgb(1, 1, 59);
+    height: 60px;
+  width:100%;
+  overflow: hidden;
+  height: 60px;
+
+  }
+  .box
+  {
+      position: fixed;
+      background-color: lightgrey;
+      width: 400px;
+      border: 15px solid rgb(28, 2, 100);
+      padding: 50px;
+      padding-bottom: 5px;
+      margin:20px;
+      align-content: center;
+      padding-top: 10px;
+      margin-left: 500px;
+      margin-top: 100px;
+    
+  }
+  
+
+
+
+</style>
+      </head>
+
+
+      <body>
+
+        <div class="navbar" style="color: #d4d2ee;text-align: center;">
+           <h3> Stock Sentiment Analysis Using News Headlines</h3>
+        </div>
+    
+        <video autoplay muted loop id="myVideo">
+            <source src="{{ url_for('static', filename='increase_stock.mov') }}" type="video/mp4">
+        </video>
+            
+            
+
+        <div class="box" >
+          <center>
+                          
+                {% if prediction == 1%}
+            <h2 style="color:rgb(1, 32, 1);">stock value rises</h2>
+            {% elif prediction == 0%}
+            <h2 style="color:rgb(46, 1, 1);">stock value falls</h2>
+            {% endif %}
+          </center>
+                          
+          </div>
+
+                
+
+        
+    
+    </body>
+
+
+</html>

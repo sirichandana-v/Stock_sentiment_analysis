@@ -1,0 +1,62 @@
+body
+{
+margin:0;
+}
+#myVideo {
+    position: fixed;
+    margin-top: 60px;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+z-index: -1;
+  }
+  /*.content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(201, 47, 47, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+    background: transparent;
+    margin-left: 500px;
+    margin-top: 20px;
+    margin-bottom: 200px;
+  }*/
+  textarea
+  {
+    align-self:baseline;
+  }
+  .navbar
+  {
+    background: rgb(1, 1, 59);
+    height: 60px;
+  width:100%;
+  overflow: hidden;
+  height: 60px;
+
+  }
+  .box
+  {
+      position: fixed;
+      background-color: lightgrey;
+      width: 400px;
+      border: 15px solid rgb(28, 2, 100);
+      padding: 50px;
+      padding-bottom: 5px;
+      margin: 20px;
+      align-content: center;
+      padding-top: 10px;
+    
+  }
+  input[type=submit]{
+    background-color: #120774;
+    border: none;
+    color: rgb(241, 237, 250);
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 140px;
+    cursor: pointer;
+    
+  }
+  
