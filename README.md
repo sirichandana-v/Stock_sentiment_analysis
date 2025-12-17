@@ -1,11 +1,8 @@
 # Stock Sentiment Analysis using News Articles
 <img alt="Home Page" src="images/output.gif" align="centre" height="350" width="347">
 
-## Idea
-The idea is to analyze the image or screenshot of a news article and predict whether the stock price will go up or down.
-
 ## About the Web-App
-Web-App is used to upload an image of the news article that needs to be analyzed. Then [Tesseract-OCR](https://github.com/tesseract-ocr/tesseract) is used to extract the text from the news article. The extracted text is used by an NLP model to predict whether the price will go up or down. The result gets displayed onto the screen.
+Web-App is used to input text of the news article that needs to be analyzed. An NLP model to predict whether the price will go up or down. The result gets displayed onto the screen.
  
 ## About the dataset used.
 📌 The data set in consideration is a combination of the world news and stock price shifts available on Kaggle.
